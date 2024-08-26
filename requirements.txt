@@ -1,0 +1,7 @@
+virtualenv
+flask
+Flask-SQLAlchemy
+SQLAlchemy
+flask_bcrypt
+flask_login
+requests
