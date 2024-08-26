@@ -9,6 +9,8 @@ from flask import  render_template
 main = Blueprint('main', __name__)
 
 @main.route('/')
+def index():
+    return redirect(url_for('logout'))
 
 @main.route('/login', methods=['GET', 'POST'])
 
