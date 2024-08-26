@@ -8,7 +8,7 @@ from flask import  render_template
 
 main = Blueprint('main', __name__)
 
-@main.route('/')
+@main.route('/logout')
 @main.route('/login', methods=['GET', 'POST'])
 
 def login():
