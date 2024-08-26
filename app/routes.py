@@ -10,7 +10,6 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 
-    
 @main.route('/login', methods=['GET', 'POST'])
 
 def login():
@@ -89,5 +88,3 @@ def delete_chat_id(chat_id):
 def get_chat_ids():
     chat_ids = ChatID.query.with_entities(ChatID.chat_id).all()
     return jsonify([chat_id[0] for chat_id in chat_ids])
-
-
