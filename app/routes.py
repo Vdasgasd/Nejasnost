@@ -10,7 +10,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def index():
-    return redirect(url_for('mai.logout'))
+    return redirect(url_for('main.logout'))
 
 @main.route('/login', methods=['GET', 'POST'])
 
